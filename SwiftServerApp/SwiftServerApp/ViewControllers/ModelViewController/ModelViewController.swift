@@ -38,7 +38,7 @@ class ModelViewController: UIViewController , ViewDataObserving {
   var searchEnabled:Bool = true
   let cellReuseIdentifier: String = "ModelTableViewCell"
   let cellNibName: String = "ModelTableViewCell"
-  
+
   @IBOutlet weak var searchView: UIView! {
     didSet {
       searchView.isHidden = !searchEnabled

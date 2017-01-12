@@ -6,7 +6,7 @@ class ModelTableViewCell: UITableViewCell, UIReusable {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
 
-  static let rowHeight:CGFloat = CGFloat(189.0)
+  static let rowHeight:CGFloat = CGFloat(71.0)
 
   func loadItem(_ model: ModelRowViewData ) {
     titleLabel.text = model.title
