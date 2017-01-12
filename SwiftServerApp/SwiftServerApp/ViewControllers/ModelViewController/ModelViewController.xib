@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModelViewController" customModule="SwiftServerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="searchView" destination="beN-OG-Pzu" id="uMq-ek-giM"/>
+                <outlet property="tableView" destination="iOp-a7-9XT" id="n5y-Wf-td2"/>
+                <outlet property="textFieldSearch" destination="PCY-jG-H59" id="a32-UF-hcA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beN-OG-Pzu" userLabel="SearchView">
+                    <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-jG-H59">
+                            <rect key="frame" x="8" y="5" width="359" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="actionSearchEditChanged:" destination="-1" eventType="editingChanged" id="PV3-H5-lcI"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="PCY-jG-H59" secondAttribute="bottom" constant="5" id="3H4-Rz-9a1"/>
+                        <constraint firstAttribute="trailing" secondItem="PCY-jG-H59" secondAttribute="trailing" constant="8" id="VgD-GK-OvA"/>
+                        <constraint firstItem="PCY-jG-H59" firstAttribute="leading" secondItem="beN-OG-Pzu" secondAttribute="leading" constant="8" id="YaA-Gq-SnV"/>
+                        <constraint firstItem="PCY-jG-H59" firstAttribute="top" secondItem="beN-OG-Pzu" secondAttribute="top" constant="5" id="zfc-sS-FGn"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-a7-9XT">
+                    <rect key="frame" x="0.0" y="105" width="375" height="482"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iOp-a7-9XT" secondAttribute="bottom" constant="80" id="2ul-U1-m0h"/>
+                <constraint firstItem="beN-OG-Pzu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lni-0b-mZu"/>
+                <constraint firstAttribute="trailing" secondItem="beN-OG-Pzu" secondAttribute="trailing" id="S6e-OQ-QLO"/>
+                <constraint firstItem="iOp-a7-9XT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WTz-0v-czs"/>
+                <constraint firstItem="iOp-a7-9XT" firstAttribute="top" secondItem="beN-OG-Pzu" secondAttribute="bottom" constant="1" id="fKE-WT-Xw2"/>
+                <constraint firstAttribute="trailing" secondItem="iOp-a7-9XT" secondAttribute="trailing" id="jut-EL-ezt"/>
+                <constraint firstItem="beN-OG-Pzu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="qOU-Hu-maz"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="71.5"/>
+        </view>
+    </objects>
+</document>

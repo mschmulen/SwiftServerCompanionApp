@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "4.2.0"
+github "Haneke/HanekeSwift" "1157a124ec699f4ad926cb054f1d0bfce88ae7a9"
+github "antitypical/Result" "3.1.0"
+github "SwiftyJSON/SwiftyJSON" "3.1.4"
+github "mschmulen/yachtsShare" "0.0.3"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.4"
